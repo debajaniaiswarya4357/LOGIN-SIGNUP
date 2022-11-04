@@ -12,10 +12,10 @@ export const Register = (props) => {
 
     return (
         <div className="auth-form-container">
-            <h2>REGISTER</h2>
+            <h2>SIGN UP</h2>
         <form className="register-form" onSubmit={handleSubmit}>
             <label htmlFor="name">Full name</label>
-            <input value={name} name="name" id="name" placeholder="full Name" />
+            <input value={name} onChange={(e) => setName(e.target.value)} type="name" name="name" id="name" placeholder="full Name" />
             <label htmlFor="email">email</label>
             <input value={email} onChange={(e) => setEmail(e.target.value)}type="email" placeholder="youremail@gmail.com" id="email" name="email" />
             <label htmlFor="password">password</label>
